@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#DE837F"
+    tools:context=".Main4Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"
+        android:text="Sweet choice"
+        android:background="#663300"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:id="@+id/titulo"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:text="Mark the desserts you like:..."
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/pregunta"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta"
+        android:textStyle="bold"
+        android:text="Cake"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/checkcake"
+        android:layout_marginRight="120dp"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/checkcake"
+        android:background="@drawable/cake"
+        android:id="@+id/cake"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pregunta"
+        android:textStyle="bold"
+        android:text="Cupcake"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/checkcup"
+        android:layout_toRightOf="@id/checkcake"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/checkcup"
+        android:background="@drawable/cupcake"
+        android:id="@+id/cupcake"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/cake"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cake"
+        android:textStyle="bold"
+        android:text="Ice cream"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/checkice"
+        android:layout_marginRight="70dp"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/checkice"
+        android:background="@drawable/icecream"
+        android:id="@+id/ice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cupcake"
+        android:textStyle="bold"
+        android:text="Donut"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/checkdonut"
+        android:layout_toRightOf="@id/checkice"
+        />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/checkdonut"
+        android:background="@drawable/donut"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/cake"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Guardar datos"
+        android:background="#663300"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
